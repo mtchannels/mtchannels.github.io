@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTChannels - Premium Network</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { background-color: #050505; background-image: radial-gradient(circle at 50% top, #1a0505 0%, #000000 70%); color: #ffffff; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; display: flex; justify-content: center; align-items: flex-start; min-height: 100vh; overflow-x: hidden; }
+        .container { width: 100%; max-width: 450px; padding: 30px 15px; text-align: center; box-sizing: border-box; }
+        .logo-container { margin-bottom: 15px; animation: fadeInDown 0.8s ease; }
+        .logo-img { width: 90px; height: 90px; border-radius: 50%; background-color: #ffffff; border: 3px solid #ff3e3e; box-shadow: 0 0 20px rgba(255, 62, 62, 0.4); display: flex; justify-content: center; align-items: center; margin: 0 auto; }
+        .header { font-size: 26px; font-weight: 900; color: #ff3e3e; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 2px; animation: fadeInDown 0.8s ease; }
+        .subheader { font-size: 13px; color: #aaaaaa; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 1.5px; animation: fadeInDown 0.8s ease; }
+        .link-card { display: flex; justify-content: space-between; align-items: center; background: #121212; margin-bottom: 12px; padding: 15px 20px; border-radius: 12px; border: 1px solid #222222; transition: all 0.3s ease; opacity: 0; animation: fadeInUp 0.6s ease forwards; }
+        .link-card:hover { border-color: #ff3e3e; background: #1a1a1a; box-shadow: 0 0 15px rgba(255, 62, 62, 0.15); transform: translateY(-3px); }
+        .title { font-size: 16px; font-weight: 600; color: #efefef; text-align: left; display: flex; align-items: center; gap: 10px; }
+        .btn { background: #ff3e3e; color: #ffffff; text-decoration: none; padding: 8px 18px; border-radius: 6px; font-weight: bold; font-size: 13px; transition: all 0.3s ease; display: flex; align-items: center; gap: 6px; }
+        .btn:hover { background: #ff1a1a; box-shadow: 0 0 15px #ff3e3e; }
+        .vip-card { background: linear-gradient(145deg, #2a0808, #110000) !important; border: 1px solid #ff3e3e !important; margin-top: 25px; padding: 18px 20px !important; }
+        .vip-title { color: #ffb7b7 !important; font-weight: 800 !important; font-size: 17px !important; }
+        .coming-soon { font-size: 13px; color: #ffb7b7; margin-top: 35px; font-weight: bold; letter-spacing: 1px; animation: fadeInUp 1.5s ease forwards; opacity: 0; animation-delay: 1.1s; }
+        .share-section { margin-top: 15px; animation: fadeInUp 1.5s ease forwards; opacity: 0; animation-delay: 1.2s; }
+        .share-title { font-size: 12px; color: #888; margin-bottom: 15px; letter-spacing: 2px; }
+        .share-buttons { display: flex; justify-content: center; gap: 20px; }
+        .share-circle { width: 45px; height: 45px; background: #151515; border: 1px solid #333; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 20px; text-decoration: none; transition: 0.3s; cursor: pointer; border: none; }
+        .share-circle:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(255, 62, 62, 0.3); color: #ff3e3e; }
+        #toast { visibility: hidden; min-width: 200px; background-color: #ff3e3e; color: #fff; text-align: center; border-radius: 8px; padding: 12px; position: fixed; z-index: 1; left: 50%; bottom: 30px; transform: translateX(-50%); font-size: 14px; font-weight: bold; }
+        #toast.show { visibility: visible; animation: fadein 0.5s, fadeout 0.5s 2.5s; }
+        .footer-text { margin-top: 30px; font-size: 12px; color: #444444; padding-bottom: 20px; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
+        @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
+        .delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.2s; } .delay-3 { animation-delay: 0.3s; } .delay-4 { animation-delay: 0.4s; } .delay-5 { animation-delay: 0.5s; } .delay-6 { animation-delay: 0.6s; } .delay-7 { animation-delay: 0.7s; } .delay-8 { animation-delay: 0.8s; } .delay-9 { animation-delay: 0.9s; } .delay-10 { animation-delay: 1.0s; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="logo-container"><div class="logo-img"><i class="fas fa-play" style="font-size: 35px; color: #ff3e3e;"></i></div></div>
+    <div class="header">MTChannels UPDATE</div>
+    <div class="subheader">Premium Movie Network</div>
+    <div class="link-card delay-1"><span class="title">🍿 Marathi 3.2 NEW</span><a href="https://t.me/+mNa7TrmBiss5NmU1" target="_blank" class="btn">JOIN</a></div>
+    <div class="link-card delay-2"><span class="title">🎬 Bollywood</span><a href="https://t.me/+uN2guqbHUMA2OTA1" target="_blank" class="btn">JOIN</a></div>
+    <div class="link-card delay-3"><span class="title">🎭 Hollywood</span><a href="https://t.me/+dDNAg8yuqos3OTVl" target="_blank" class="btn">JOIN</a></div>
+    <div class="link-card delay-4"><span class="title">💥 South Movies</span><a href="https://t.me/+mqpM7J45LQ4yMzU1" target="_blank" class="btn">JOIN</a></div>
+    <div class="link-card delay-5"><span class="title">📺 Web Series 1.0</span><a href="https://t.me/+yCCBe-t04jZmZDM1" target="_blank" class="btn">JOIN</a></div>
+    <div class="link-card delay-6"><span class="title">🔥 18+ Web Series</span><a href="https://t.me/+Xlwm2jByDFw2OTll" target="_blank" class="btn">JOIN</a></div>
+    <div class="link-card delay-7"><span class="title">🔓 Marathi Open</span><a href="https://t.me/Ott_Marathi" target="_blank" class="btn">VIEW</a></div>
+    <div class="link-card delay-8"><span class="title">📢 Hindi Open</span><a href="https://t.me/HD_Multiflex" target="_blank" class="btn">VIEW</a></div>
+    <div class="link-card delay-9"><span class="title">🔍 Ai Search Movie Group</span><a href="https://t.me/Ai_Search_Movie" target="_blank" class="btn">SEARCH</a></div>
+    <div class="link-card vip-card delay-10"><span class="title vip-title"><i class="fas fa-robot"></i> Latest Files Drop Bot</span><a href="https://t.me/Latest_Files_Drop_Bot" target="_blank" class="btn">SEARCH</a></div>
+    <div class="coming-soon"><i class="fas fa-rocket"></i> Coming Soon: File To Link Stream</div>
+    <div class="share-section">
+        <div class="share-title">SHARE VIA</div>
+        <div class="share-buttons">
+            <a href="https://api.whatsapp.com/send?text=🎬 Best Movies & Series: https://mtchannels.github.io" target="_blank" class="share-circle"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://t.me/share/url?url=https://mtchannels.github.io&text=🎬 Best Movies & Series Here!" target="_blank" class="share-circle"><i class="fab fa-telegram-plane"></i></a>
+            <button onclick="copyMyLink()" class="share-circle"><i class="fas fa-link"></i></button>
+        </div>
+    </div>
+    <div class="footer-text">© 2026 MTChannels | All Rights Reserved</div>
+</div>
+<div id="toast">Link Copied!</div>
+<script>
+    function copyMyLink() {
+        var link = "https://mtchannels.github.io";
+        navigator.clipboard.writeText(link).then(function() {
+            var toast = document.getElementById("toast");
+            toast.className = "show";
+            setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
+        });
+    }
+</script>
+</body>
+</html>
