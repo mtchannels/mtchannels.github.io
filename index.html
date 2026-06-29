@@ -33,7 +33,7 @@
             padding-bottom: 40px;
         }
 
-                /* --- Header Section (इमेजची साईज 150px केली आहे) --- */
+        /* --- Header Section --- */
         .header-section {
             background: url('209150.jpg') no-repeat center center;
             background-size: cover; 
@@ -49,12 +49,6 @@
             color: white; width: 38px; height: 38px; border-radius: 10px; 
             font-size: 16px; display: flex; justify-content: center; align-items: center; 
             position: relative; cursor: pointer; backdrop-filter: blur(5px);
-        }
-        
-        .nav-dot {
-            position: absolute; top: 8px; right: 8px;
-            width: 8px; height: 8px; background-color: #ff8a00;
-            border-radius: 50%; border: 1.5px solid var(--bg-main);
         }
 
         /* --- Telegram Banner --- */
@@ -81,12 +75,7 @@
         }
         .list-left { display: flex; align-items: center; gap: 15px; }
         
-        .emoji-3d {
-            font-size: 26px;
-            filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.5));
-            transform: scale(1.1);
-        }
-
+        .emoji-3d { font-size: 26px; filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.5)); transform: scale(1.1); }
         .icon-18 {
             width: 32px; height: 32px; border-radius: 50%; border: 1.5px solid #ff3e3e;
             color: #ff3e3e; display: flex; justify-content: center; align-items: center;
@@ -110,17 +99,11 @@
         .grad-blue { background: linear-gradient(90deg, #3b82f6, #4f46e5); }
 
         /* --- Explore More Section --- */
-        .section-divider {
-            display: flex; align-items: center; text-align: center; margin: 30px 20px 20px;
-        }
-        .section-divider::before, .section-divider::after {
-            content: ''; flex: 1; border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
+        .section-divider { display: flex; align-items: center; text-align: center; margin: 30px 20px 20px; }
+        .section-divider::before, .section-divider::after { content: ''; flex: 1; border-bottom: 1px solid rgba(255,255,255,0.1); }
         .section-divider span { padding: 0 15px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: #fff; }
 
-        .explore-grid {
-            display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 0 20px;
-        }
+        .explore-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 0 20px; }
         .explore-card {
             background: var(--bg-card); border-radius: 12px; padding: 16px 6px 14px;
             text-align: center; border: 1px solid var(--border-color);
@@ -139,83 +122,31 @@
         .icon-teal { background-image: linear-gradient(135deg, #99f6e4, #14b8a6); }
 
         .explore-card h4 { font-size: 11px; font-weight: 700; color: #fff; line-height: 1.3; margin-bottom: 5px; }
-        .explore-card p { font-size: 9px; color: var(--text-secondary); line-height: 1.3; margin-bottom: 14px; width: 95%; }
-        
-        .explore-btn {
-            font-size: 10px; font-weight: 700; padding: 7px 0; border-radius: 6px; 
-            width: 90%; text-decoration: none; display: block;
-        }
+        .explore-btn { font-size: 10px; font-weight: 700; padding: 7px 0; border-radius: 6px; width: 90%; text-decoration: none; display: block; }
 
-        .card-red { border-top: 2px solid #ef4444; }
         .card-red .explore-btn { background: rgba(239,68,68,0.15); color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
-
-        .card-purple { border-top: 2px solid #a855f7; }
         .card-purple .explore-btn { background: rgba(168,85,247,0.15); color: #a855f7; border: 1px solid rgba(168,85,247,0.3); }
-
-        .card-blue { border-top: 2px solid #3b82f6; }
         .card-blue .explore-btn { background: rgba(59,130,246,0.15); color: #3b82f6; border: 1px solid rgba(59,130,246,0.3); }
-
-        .card-teal { border-top: 2px solid #14b8a6; }
         .card-teal .explore-btn { background: rgba(20,184,166,0.15); color: #14b8a6; border: 1px solid rgba(20,184,166,0.3); }
 
-        /* --- Coming Soon Banner --- */
-        .coming-soon-banner {
-            margin: 20px; padding: 18px 15px; border-radius: 12px;
-            background: linear-gradient(90deg, #181112 0%, #1c131a 100%);
-            border: 1px solid rgba(255,100,100,0.15);
-            display: flex; align-items: center; justify-content: space-between;
-        }
-        .rocket-img { font-size: 42px; margin-right: 12px; filter: drop-shadow(0 0 15px rgba(255,100,100,0.3)); transform: rotate(10deg); }
-        .cs-text h4 { font-size: 11px; color: #ff7e5f; margin-bottom: 3px; font-weight: 600; }
-        .cs-text h3 { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 3px; }
-        .cs-text p { font-size: 10px; color: var(--text-secondary); }
-        .cs-btn {
-            background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.2);
-            padding: 8px 12px; border-radius: 6px; font-size: 10px; font-weight: 700; 
-            display: flex; align-items: center; gap: 6px;
-        }
-
         /* --- Footer --- */
-        .footer-section { padding: 0 20px; text-align: center; }
-        
-        .share-divider {
-            display: flex; align-items: center; text-align: center; margin: 15px 0 20px;
-        }
-        .share-divider::before, .share-divider::after {
-            content: ''; flex: 1; border-bottom: 1px dashed rgba(255,255,255,0.1);
-        }
-        .share-divider span { padding: 0 15px; font-size: 10px; color: var(--text-secondary); letter-spacing: 1px; }
-
+        .footer-section { padding: 0 20px; text-align: center; margin-top: 30px; }
         .social-icons { display: flex; justify-content: center; gap: 18px; margin-bottom: 25px; }
         .s-icon { 
             width: 40px; height: 40px; border-radius: 50%; display: flex; 
             justify-content: center; align-items: center; color: white; 
             text-decoration: none; font-size: 18px; border: 1px solid var(--border-color); 
-            background: rgba(255,255,255,0.03); border: none; cursor: pointer;
+            background: rgba(255,255,255,0.03); cursor: pointer;
         }
-        .s-icon.wa { color: #25D366; border: 1px solid rgba(37,211,102,0.3); } 
-        .s-icon.tg { color: #0088cc; border: 1px solid rgba(0,136,204,0.3); }
-        .s-icon.link { border: 1px solid rgba(255,255,255,0.2); color: #fff; }
-        
-        .footer-copyright { font-size: 10px; color: var(--text-secondary); line-height: 1.6; }
-
-        #toast { visibility: hidden; min-width: 200px; background-color: #3b82f6; color: #fff; text-align: center; border-radius: 8px; padding: 12px; position: fixed; z-index: 10; left: 50%; bottom: 30px; transform: translateX(-50%); font-size: 12px; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
-        #toast.show { visibility: visible; animation: fadein 0.5s, fadeout 0.5s 2.5s; }
-        @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
-        @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
+        .footer-copyright { font-size: 10px; color: var(--text-secondary); margin-bottom: 20px; }
     </style>
 </head>
 <body>
 
 <div class="app-container">
-    
     <div class="header-section">
         <div class="top-nav">
             <button class="nav-btn"><i class="fas fa-bars"></i></button>
-            <button class="nav-btn">
-                <i class="far fa-bell"></i>
-                <div class="nav-dot"></div>
-            </button>
         </div>
     </div>
 
@@ -228,126 +159,17 @@
     </div>
 
     <div class="list-section">
-        <a href="https://t.me/+mNa7TrmBiss5NmU1" class="list-card" target="_blank">
-            <div class="list-left">
-                <span class="emoji-3d">🍿</span>
-                <div class="list-info">
-                    <h3>Marathi 3.2 NEW</h3>
-                    <p>Latest Marathi Movies</p>
-                </div>
-            </div>
-            <div class="join-btn grad-orange"><i class="fas fa-paper-plane"></i> JOIN</div>
-        </a>
-        <a href="https://t.me/+uN2guqbHUMA2OTA1" class="list-card" target="_blank">
-            <div class="list-left">
-                <span class="emoji-3d">🎬</span>
-                <div class="list-info">
-                    <h3>Bollywood</h3>
-                    <p>Latest Bollywood Movies</p>
-                </div>
-            </div>
-            <div class="join-btn grad-orange"><i class="fas fa-paper-plane"></i> JOIN</div>
-        </a>
-        <a href="https://t.me/+dDNAg8yuqos3OTVl" class="list-card" target="_blank">
-            <div class="list-left">
-                <span class="emoji-3d">🎭</span>
-                <div class="list-info">
-                    <h3>Hollywood</h3>
-                    <p>Latest Hollywood Movies</p>
-                </div>
-            </div>
-            <div class="join-btn grad-pink"><i class="fas fa-paper-plane"></i> JOIN</div>
-        </a>
-        <a href="https://t.me/+mqpM7J45LQ4yMzU1" class="list-card" target="_blank">
-            <div class="list-left">
-                <span class="emoji-3d">💥</span>
-                <div class="list-info">
-                    <h3>South Movies</h3>
-                    <p>Latest South Indian Movies</p>
-                </div>
-            </div>
-            <div class="join-btn grad-purple"><i class="fas fa-paper-plane"></i> JOIN</div>
-        </a>
-        <a href="https://t.me/+yCCBe-t04jZmZDM1" class="list-card" target="_blank">
-            <div class="list-left">
-                <span class="emoji-3d">📺</span>
-                <div class="list-info">
-                    <h3>Web Series 1.0</h3>
-                    <p>Popular Web Series</p>
-                </div>
-            </div>
-            <div class="join-btn grad-blue"><i class="fas fa-paper-plane"></i> JOIN</div>
-        </a>
-        <a href="https://t.me/+Xlwm2jByDFw2OTll" class="list-card" target="_blank">
-            <div class="list-left">
-                <div class="icon-18">18+</div>
-                <div class="list-info">
-                    <h3>18+ Web Series</h3>
-                    <p>18+ Exclusive Content</p>
-                </div>
-            </div>
-            <div class="join-btn grad-blue"><i class="fas fa-paper-plane"></i> JOIN</div>
-        </a>
-    </div>
-
-    <div class="section-divider"><span>EXPLORE MORE</span></div>
-    <div class="explore-grid">
-        <div class="explore-card card-red">
-            <i class="fas fa-lock glossy-icon icon-orange"></i>
-            <h4>Marathi Open</h4>
-            <a href="https://t.me/Ott_Marathi" class="explore-btn" target="_blank">VIEW</a>
-        </div>
-        <div class="explore-card card-purple">
-            <i class="fas fa-bullhorn glossy-icon icon-purple"></i>
-            <h4>Hindi Open</h4>
-            <a href="https://t.me/HD_Multiflex" class="explore-btn" target="_blank">VIEW</a>
-        </div>
-        <div class="explore-card card-blue">
-            <i class="fas fa-search glossy-icon icon-blue"></i>
-            <h4>Ai Search Movie Group</h4>
-            <a href="https://t.me/Ai_Search_Movie" class="explore-btn" target="_blank">SEARCH</a>
-        </div>
-        <div class="explore-card card-teal">
-            <i class="fas fa-robot glossy-icon icon-teal"></i>
-            <h4>Latest Files Drop Bot</h4>
-            <a href="https://t.me/LatestFilesDropBot" class="explore-btn" target="_blank">SEARCH</a>
-        </div>
-    </div>
-
-    <div class="coming-soon-banner">
-        <div style="display: flex; align-items: center;">
-            <div class="rocket-img">🚀</div>
-            <div class="cs-text">
-                <h4>Coming Soon</h4>
-                <h3>File To Link Stream</h3>
-            </div>
-        </div>
-        <button class="cs-btn"><i class="far fa-clock"></i> STAY TUNED</button>
+        <a href="https://t.me/+mNa7TrmBiss5NmU1" class="list-card" target="_blank"><div class="list-left"><span class="emoji-3d">🍿</span><div class="list-info"><h3>Marathi 3.2 NEW</h3><p>Latest Marathi Movies</p></div></div><div class="join-btn grad-orange"><i class="fas fa-paper-plane"></i> JOIN</div></a>
+        <a href="https://t.me/+uN2guqbHUMA2OTA1" class="list-card" target="_blank"><div class="list-left"><span class="emoji-3d">🎬</span><div class="list-info"><h3>Bollywood</h3><p>Latest Bollywood Movies</p></div></div><div class="join-btn grad-orange"><i class="fas fa-paper-plane"></i> JOIN</div></a>
+        <a href="https://t.me/+dDNAg8yuqos3OTVl" class="list-card" target="_blank"><div class="list-left"><span class="emoji-3d">🎭</span><div class="list-info"><h3>Hollywood</h3><p>Latest Hollywood Movies</p></div></div><div class="join-btn grad-pink"><i class="fas fa-paper-plane"></i> JOIN</div></a>
+        <a href="https://t.me/+mqpM7J45LQ4yMzU1" class="list-card" target="_blank"><div class="list-left"><span class="emoji-3d">💥</span><div class="list-info"><h3>South Movies</h3><p>Latest South Indian Movies</p></div></div><div class="join-btn grad-purple"><i class="fas fa-paper-plane"></i> JOIN</div></a>
+        <a href="https://t.me/+yCCBe-t04jZmZDM1" class="list-card" target="_blank"><div class="list-left"><span class="emoji-3d">📺</span><div class="list-info"><h3>Web Series 1.0</h3><p>Popular Web Series</p></div></div><div class="join-btn grad-blue"><i class="fas fa-paper-plane"></i> JOIN</div></a>
+        <a href="https://t.me/+Xlwm2jByDFw2OTll" class="list-card" target="_blank"><div class="list-left"><div class="icon-18">18+</div><div class="list-info"><h3>18+ Web Series</h3><p>18+ Exclusive Content</p></div></div><div class="join-btn grad-blue"><i class="fas fa-paper-plane"></i> JOIN</div></a>
     </div>
 
     <div class="footer-section">
-        <div class="share-divider"><span>SHARE VIA</span></div>
-        <div class="social-icons">
-            <a href="https://api.whatsapp.com/send?text=🎬 Best Movies & Series: https://mtchannels.github.io" class="s-icon wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://t.me/share/url?url=https://mtchannels.github.io&text=🎬 Best Movies & Series Here!" class="s-icon tg" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-            <button onclick="copyMyLink()" class="s-icon link"><i class="fas fa-link"></i></button>
-        </div>
         <div class="footer-copyright">© 2026 MTChannels | All Rights Reserved</div>
     </div>
 </div>
-
-<div id="toast">Link Copied Successfully!</div>
-
-<script>
-    function copyMyLink() {
-        var link = "https://mtchannels.github.io";
-        navigator.clipboard.writeText(link).then(function() {
-            var toast = document.getElementById("toast");
-            toast.className = "show";
-            setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
-        });
-    }
-</script>
-
 </body>
 </html>
